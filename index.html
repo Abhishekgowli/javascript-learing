@@ -10,12 +10,13 @@
     <div id="myid">
       <h1>Hello</h1>
       <form name="myform">
-        Name <input id="myinput" type="text"  name="mynameid"/> <br /><br /> <p id="smallid"></p>
+        Name <input id="myinput" type="text" name="mynameid" /> <br /><br />
+        <p id="smallid"></p>
         <button id="btnid" onclick="getdatafromCokkiee()">Clickme</button><br />
       </form>
     </div>
     <script>
-             /* var targetinput=document.getElementById("myinput")
+      /* var targetinput=document.getElementById("myinput")
               function changeToOrange(e){
                   targetinput.style.backgroundColor="blue"
               }
@@ -25,7 +26,7 @@
           targetinput.addEventListener("mouseover",changeToOrange)
           targetinput.addEventListener("mouseout",changeToWhite)*/
 
-          /*var cnf=window.confirm("if you want to agree")
+      /*var cnf=window.confirm("if you want to agree")
           if(cnf){
               document.write("you are welcome")
           }
@@ -38,8 +39,7 @@
       //var prometele=window.prompt("enter Your name")
       //document.write(prometele)
 
-
-     /* 
+      /* 
      # The Form Vaildation By using Java Script and the Dom 
      function validate_data(){
         var ptrn= /^([0-9\w]*)$/;
@@ -54,10 +54,10 @@
       }
       document.getElementById("myinput").addEventListener("keyup",validate_data)*/
 
-//Working With The Cookiees By Using JavaScript 
-// document.cookie="username=abhi"
- //document.cookie="email=gowleabhi@gmail.com"
-/*
+      //Working With The Cookiees By Using JavaScript
+      // document.cookie="username=abhi"
+      //document.cookie="email=gowleabhi@gmail.com"
+      /*
 function setCokiee(){
     document.cookie="name="+document.getElementById("myinput").value;
 }
@@ -77,23 +77,36 @@ function getCookie(){
     
 }
 */
-//Working with Local Storage in Java Script 
-//window.localStorage.setItem("Username","abhishek")
-//function getdatafromCokkiee(){
+      //Working with Local Storage in Java Script
+      //window.localStorage.setItem("Username","abhishek")
+      //function getdatafromCokkiee(){
+
+      //document.write(window.localStorage.getItem("Username"))
+      //clearing the local storege
+      //localStorage.clear()
+      //}
+
+      //Map funtion in  Java script
+      //const arrr=[10,20,30,40,50,60]
+      //const arrvalues=arrr.map((value)=>{
+      //return value*2
+      //})
+      //console.log(arrvalues)
+
+
+//Maps Using Array of Objectsv
+/*var arr = [
+        { price: "100", product: "Moblie" },
+        { price: "200", product: "Laptop" },
+        {price:"200",product:"HeadPhone"},
+      ];
+const mappedarr=arr.map((value)=>{
+          return`the value of the Product is${ value.product}` 
+      })
+      console.log(mappedarr);*/
     
-    //document.write(window.localStorage.getItem("Username"))
-    //clearing the local storege
-    //localStorage.clear()
-//}
 
 
-
- 
- 
-
-
-
-
-      </script>
+    </script>
   </body>
 </html>
