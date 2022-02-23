@@ -93,9 +93,8 @@ function getCookie(){
       //})
       //console.log(arrvalues)
 
-
-//Maps Using Array of Objectsv
-/*var arr = [
+      //Maps Using Array of Objectsv
+      /*var arr = [
         { price: "100", product: "Moblie" },
         { price: "200", product: "Laptop" },
         {price:"200",product:"HeadPhone"},
@@ -104,11 +103,152 @@ const mappedarr=arr.map((value)=>{
           return`the value of the Product is${ value.product}` 
       })
       console.log(mappedarr);*/
-    var arr=[10,20,30,40,50]
+
+      // Example for the for each Loop
+      /* var arr=[10,20,30,40,50]
     arr.forEach((s)=>{
         console.log(s*2);
     })
+    */
 
+      var car = {
+        type: [
+          { name: "Jhon", surname: "Rio" },
+          { name: "Les", surname: "Stan" },
+        ],
+        model: "500",
+        color: "white",
+      };
+
+//Looping Thought The Map Function
+   // console.log(car.type.map((value)=>{
+       // return value.name
+    //}))
+    //lopping Thought the For each loop
+    /*console.log(car.type.forEach((value)=>{
+        console.log(value.name)
+    }))*/
+
+
+    //loping thought the Filter Method
+/*var arr=[10,11,12,13,19,36]
+var a=[]
+var arr1=arr.filter((value)=>{
+    if (value%2!=0){
+        return a.push(value*10)
+
+    }
+})
+console.log(a)*/
+
+
+/* const newarr=car.type.map((value)=>{
+    return `The Value is ${value.name}`
+}) */
+
+
+
+//Map Reduced operation for the Loping thought the Array
+/* const newarr=car.type.map((value)=>
+{ return value.name}).reduce((value)=>{
+    return value
+})
+console.log(newarr);
+ */
+
+
+//arrray Destruring 
+/* const arr=[10,20,30,49,50]
+const[a1,a2,a3]=arr
+console.log(a1);
+console.log(a2);
+console.log(a3); */
+/* const vehicles = ['mustang', 'f-150', 'expedition','abbbs','ssee'];
+const [arr1,,arr2,...rest]=vehicles
+console.log(arr1);
+console.log(arr2);
+console.log(rest); */
+
+
+//Object Destructring
+
+// The Main Purpose of the Object Destrustring is the avoiding the Old way of the the accesing the object by syntax that is obj.property or obj.key
+/* const dstruct=(({type,model,color})=>{
+    console.log(`The Car Type is  the ${type} and The Model is ${model} and the Car is The ${color}`)
+})
+dstruct(car) */
+
+/* //SPREAD OPERATOR
+const arr=[10,20,30,49,66,55]
+//const arr2=[...arr]//coping the values of the one array to another array
+const arr2=[10,20,30,40,50,60]
+const arr3=[...arr,arr2]
+//concat operation Using 
+console.log(arr3);
+ */
+
+/* //Expand the array using spread
+const arr=[10,20,30,49]
+const arr1=[...arr,50,609]
+console.log(arr1); */
+
+//Sperad operator for Objects
+/* const obj={name:"abhi",age:90,}
+const obj2={...obj}
+console.log(obj2) */
+
+
+//Promisies and async and Await
+
+
+//Example For the Creating a Promise and resloving the Promise
+/* const PromiseObj=new Promise((reslove,reject)=>{
+    var a=true
+    if(a==true){
+        reslove("The Promisied is Resloved")
+    }
+    else{
+        reject("The Promise is Not Resloved")
+    }
+}).then((value)=>{
+    console.log(value)
+}).catch((e)=>console.log(e)) */
+
+
+
+
+// Another example for the Promise and resloving the Promisses
+function getName(name){
+    return new Promise((reslove,reject)=>{
+        setTimeout(()=>{
+            console.log("The name is "+name);
+        },2000);
+        reslove(name)
+    })
+}
+
+function gethobiees(name){
+    return new Promise((reslove,reject)=>{
+        setTimeout(()=>{
+            console.log("The hobiees is Printing ")
+            reslove(['cricket','football','tenis'])
+
+        },5000)
+    })
+}
+
+//Resloving the Promisie using the .then method
+//const abb=getName("abhi").then((name)=>gethobiees(name).then((hobiee)=>{console.log(hobiee)}))
+
+
+// Resloving the Promise by using  async await
+/* async function fetchDeatiles()
+{
+    const num=await getName("abhi")
+    const hobbies=await gethobiees(num)
+    console.log(hobbies);
+}
+fetchDeatiles() */
 
     </script>
   </body>
